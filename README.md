@@ -1,45 +1,56 @@
-# Form Sign Up
 
-## Referências:
+# 📘 FORM com REACT
 
-[1] Gerenciando o estado: https://pt-br.react.dev/learn/managing-state <br>
-[2] Atualizando objetos no state: https://pt-br.react.dev/learn/updating-objects-in-state <br>
-[3] Renderização condicional: https://pt-br.react.dev/learn#conditional-rendering <br>
-[4] Operador ternário: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Conditional_operator <br>
-[5] Passando props a um componente: https://pt-br.react.dev/learn/passing-props-to-a-component <br>
+---
 
-Outros:
+## 📜 Intro
 
-Começando Com React/Getting Started With React:
+Este repositório tem como objetivo estudos de [React](https://reactjs.org/). O projeto consistiu na criação de um formulário simples com filtros de cidade/estado.
 
-https://www.theodinproject.com/paths/full-stack-javascript/courses/react#getting-started-with-react
+---
 
-## Instalação:
+## 🛠️ Instalação
 
-1. Faça um fork do repositório.
+### 1. Faça um fork do repositório.
 
-2. Clone sua fork:
+### 2. Clone sua fork:
 
-```
+```bash
 git clone https://github.com/<USERNAME>/form-sign-up.git
 ```
 
-2. Entrar no diretório:
+### 3. Entre no diretório:
 
-```
+```bash
 cd form-sign-up
 ```
 
-3. Instalar dependências:
+### 4. Instale as dependências:
 
-```
+```bash
 npm install
 ```
 
-4. Abrir o servidor de desenvolvimento:
+### 5. Abra o servidor de desenvolvimento:
 
-```
+```bash
 npm run dev
 ```
+
+### 6. Copie e cole a URL no seu navegador.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- ![React Badge](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+- ![HTML Badge](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
+- ![CSS Badge](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
+
+---
+
+## 🙌 Finalização
+
+Obrigado por explorar este projeto! Se você tiver alguma dúvida ou sugestão, fique à vontade para contribuir ou abrir uma issue. 😊🚀
 
 
