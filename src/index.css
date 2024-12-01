@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url('https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900|montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/* CSS Reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, svg, video, canvas {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+
+input, button, textarea, select {
+font: inherit;
+}
+
+/* Fonts */
+
+
+
+/* Variables */
+
+:root {
+  --color-primary: #0496ff;
+  --color-secondary: #0069b5;
+  --color-tertiary: #dee2e6;
+}
+
+/* Styles */
+
+body {
+  font-family: Montserrat;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
+  padding: 1.5em 1em 1.5em 1em;
+  border-radius: 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.form-title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.form-validation-message {
+  color: #d90429;
+  font-size: .9rem;
+}
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+.form[data-validated='true'] {
+  .form-inputs {
+    padding-bottom: .5em;
+  }
+
+  .form-validation-message {
+    padding-bottom: 1.5em;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.input-label,
+.dropdown-label {
+  font-weight: 500;
+  padding-bottom: .1em;
+}
+.input,
+.dropdown {
+  height: 35px;
+  border: 2px solid var(--color-tertiary);
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+}
+.input:focus {
+  border-color: var(--color-primary);
+}
+
+.button {
+  border: none;
+  background: none;
+  border-radius: 30px;
+  width: 100px;
+  font-weight: 600;
+  padding: .8em;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.button-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.button-primary:hover {
+  background-color: var(--color-secondary);
+}
+.button-secondary {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+.button-secondary:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.dropdown.is-opened {
+  border-color: var(--color-primary);
+}
+.dropdown-selected-value {
+  user-select: none;
+}
+.dropdown-options {
+  width: 368px;
+  display: flex;
+  flex-direction: column;
+  gap: .1em;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  border: 2px solid var(--color-tertiary);
+
+  .dropdown-option,
+  .dropdown-default-option {
+    padding: .1em .5em;
+    user-select: none;
+  }
+  .dropdown-option:hover {
+    background-color: var(--color-tertiary);
+  }
+  .dropdown-default-option {
+    opacity: 50%;
+  }
+}
+.dropdown-placeholder {
+  font-weight: 500;
+  opacity: 50%;
+  user-select: none;
+}
+.dropdown-arrow {
+  user-select: none;
+  transition: transform .3s ease-in-out;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
